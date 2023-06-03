@@ -1,0 +1,190 @@
+ body 
+ {
+    margin: 0px; 
+    background-color: #0F1116 !important;
+    font-family: sans-serif;
+    color : #222;
+ }
+ 
+/* screaming */
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+ 
+ #main
+ {
+
+    height:100%;
+
+    width:60%;
+    
+    margin:auto;
+
+    display: grid;
+    grid-template-columns: 20% minmax(max-content,80%);
+    grid-template-rows: 10% minmax(max-content,85%) 5%;
+ }
+
+
+ #home
+ {
+    grid-row: 1;
+    grid-column: 1;
+
+    /* border-radius: 25px 0px 0px 0px; */
+ }
+
+ #header
+ {
+    grid-row: 1 / 7;
+    grid-column: 2;
+    /* border-radius: 0px 25px 0px 0px; */
+ }
+
+ #sidebar
+ {
+
+    display: grid;
+    grid-template-rows: 5px repeat(5,5px 25px 5px);
+    grid-row: 2;
+    grid-column: 1;
+    text-decoration: none;
+    user-select: none;
+    /* width:100px; */
+    /* border-radius: 0px 0px 0px 25px; */
+ }
+ #content
+ {
+    grid-area: c;
+    grid-row: 2;
+    grid-column: 2;
+    padding:10px
+ }
+
+
+ #footer
+ {
+   grid-row: 3;
+   grid-column: 1 / 4;
+    /* border-radius: 0px 0px 25px 0px; */
+ }
+ 
+
+ @keyframes sbContentAnim {
+  from {background-color: #38548B;}
+  to {background-color: #AFBFE0;}
+}
+
+ .sbContent:hover
+ {
+    animation-name: sbContentAnim;
+   background-color: #AFBFE0;
+   animation-duration: 0.1s;
+ }
+
+
+ .center
+ {
+   width:fit-content;
+   margin:auto;
+ }
+
+ .textCenter
+ {
+    margin-top:10px;
+    text-align: center;
+ }
+
+
+ .virt_center
+ {
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+ }
+
+
+ .primary
+ {
+    background-color: #AFBFE0;
+ }
+
+ .secondary
+ {
+   background-color: #5771A5;
+ }
+
+ .thirdary
+ {
+    background-color: #38548B;
+    color:white;
+ }
+ .forthary
+ {
+    background-color: #3A4051;
+ }
+
+
+
+
+  .red
+ {
+   background-color: red;
+ }
+
+
+ .green
+ {
+   background-color: green;
+ }
+
+
+ .blue
+ {
+   background-color: blue;
+ }
+
+
+
+
+
+/*undoing php madness*/
+
+a:link
+{
+   background-color: inherit !important;
+}
+
+ /*
+
+
+#0F1116 background
+
+
+#38548B home colour
+
+#3A4051 header
+
+#5771A5 sidebar
+
+
+#5771A5 footer
+
+
+
+
+
+#FFDD9D
+#9284C8
+#73BBB6
+#73BBB6
+
+#8097C4
+
+#5771A5
+
+#38548B
+
+
+ */
